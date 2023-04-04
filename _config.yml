@@ -24,7 +24,8 @@ baseurl: /ego20230404
 #
 
 # 你的博客logo图片URL，建议尺寸不超过300px × 300px
-avatar: https://raw.githubusercontent.com/fgc346/image/main/img/logo_1.jpg
+# avatar: https://raw.githubusercontent.com/fgc346/image/main/img/logo_1.jpg
+avatar: https://cdn.nlark.com/yuque/0/2023/jpeg/22895350/1680619925735-654137b3-f845-44de-9274-deb6cd833091.jpeg
 
 # 你的favicon（出现在浏览器tab上）图片URL，建议使用较小(64px × 64px)的图片
 favicon: https://raw.githubusercontent.com/FromEndWorld/LOFFER/master/images/favicon.png

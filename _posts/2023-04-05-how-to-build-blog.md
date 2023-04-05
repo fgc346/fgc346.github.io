@@ -11,7 +11,7 @@ pinned: false
 
 一直以来就想搭建自己的博客网站，将自己平时的一些笔记系统化，整理为博客内容，形成自己的知识输出。
 
-偶然看到一个博客讲述了自己利用github搭建博客的过程，有别人写好的模板可以直接用，而且我觉得他的博客形式蛮好的，我就按照他博客进行搭建。
+偶然看到一个博客讲述了自己利用**github**搭建博客的过程，有别人写好的模板可以直接用，而且我觉得他的博客形式蛮好的，我就按照他博客进行搭建。
 
 <!-- more -->
 
@@ -23,8 +23,8 @@ pinned: false
 
 本博客使用[FromEndWorld/LOFFER](https://github.com/FromEndWorld/LOFFER)模板进行搭建，在此向原作者表示感谢，具体使用方式在下一节详细介绍。
 
-1. [zxl19/zxl19.github.io](https://github.com/zxl19/zxl19.github.io)
-2. [FromEndWorld/LOFFER](https://github.com/FromEndWorld/LOFFER)
+1. [zxl19/zxl19.github.io](https://github.com/zxl19/zxl19.github.io), 受到启发的博客，该博客也是使用该模板搭建。
+2. [FromEndWorld/LOFFER](https://github.com/FromEndWorld/LOFFER)， 使用的模板仓库。
 
 博客模板涉及到两个知识点**Jekyll**和**Github Pages**，下面简单介绍一下两者的含义。
 
@@ -47,7 +47,7 @@ Github Pages的服务是免费的，但是也有一些限制：
 
 - 仓库空间不大于**1G**
 - 每个月的流量不超过**100G**
-- 每小时更新不超过 10 次
+- 每小时更新不超过 **10** 次
 
 ### 搭建自己的博客内容
 
@@ -57,19 +57,17 @@ Github Pages的服务是免费的，但是也有一些限制：
 
 选择使用这个模板，并创建自己的仓库
 
-![img](https://cdn.nlark.com/yuque/0/2023/png/22895350/1680616419517-7bec8d6c-8a4a-4b61-81d1-1a2888507b60.png)
+![img](https://raw.githubusercontent.com/fgc346/image/main/img/1680616419517-7bec8d6c-8a4a-4b61-81d1-1a2888507b60.png)
 
 #### 第二步：填写自己仓库的信息
 
 填写仓库名，创建仓库
 
-![img](https://cdn.nlark.com/yuque/0/2023/png/22895350/1680616950475-9bf13d49-0a51-475b-b0b7-0e036315506b.png)
+![img](https://raw.githubusercontent.com/fgc346/image/main/img/1680616950475-9bf13d49-0a51-475b-b0b7-0e036315506b.png)
 
 #### 第三步：进入仓库的settings进行相关设置
 
-
-
-![img](https://cdn.nlark.com/yuque/0/2023/png/22895350/1680617680425-28caf54d-d55f-4cd6-aed5-c13f690ca919.png)
+![img](https://raw.githubusercontent.com/fgc346/image/main/img/1680617680425-28caf54d-d55f-4cd6-aed5-c13f690ca919.png)
 
 #### 第四步：设置站点信息
 
@@ -116,14 +114,9 @@ pinned: false
 
 ## 参考
 
-1. [如何在GitHub上写博客？-少数派的回答-知乎](https://www.zhihu.com/question/20962496/answer/677815713)
-2. [Gitee码云pages+Jekyll主题搭建个人博客-bilibili](https://www.bilibili.com/video/BV1cJ411h7q3)
-3. [各种开源协议介绍-菜鸟教程](https://www.runoob.com/w3cnote/open-source-license.html)
-4. [Open Source Guides](https://opensource.guide)
-5. [github/choosealicense.com](https://github.com/github/choosealicense.com)
-6. [【最新】解决Github网页上图片显示失败的问题-CSDN博客](https://blog.csdn.net/qq_38232598/article/details/91346392)
-7. [几条经验美化你的GitHub开源项目-简书](https://www.jianshu.com/p/d587b91bacb3)
-8. [simple-icons/simple-icons](https://github.com/simple-icons/simple-icons)
-9. [Maddoc42/Android-Material-Icon-Generator](https://github.com/Maddoc42/Android-Material-Icon-Generator)
-10. [Online Tools-RedKetchup](https://redketchup.io)
-11. [如何制作个人学术主页？-知乎](https://www.zhihu.com/question/281476526)
+1.  [Jekyll + Github Pages 博客搭建入门](https://www.jianshu.com/p/9f198d5779e6)
+2. [几条经验美化你的GitHub开源项目-简书](https://www.jianshu.com/p/d587b91bacb3)
+3. [simple-icons/simple-icons](https://github.com/simple-icons/simple-icons)
+4. [Maddoc42/Android-Material-Icon-Generator](https://github.com/Maddoc42/Android-Material-Icon-Generator)
+5. [Online Tools-RedKetchup](https://redketchup.io)
+6. [如何制作个人学术主页？-知乎](https://www.zhihu.com/question/281476526)

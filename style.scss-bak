@@ -341,7 +341,6 @@ img {
   }
 }
 
-
 .sidebar {
   padding: 20px 0;
 
@@ -436,14 +435,6 @@ nav {
   @include mobile {
     float: none;
     width: 100%;
-  }
-}
-@media screen and (max-width:2200px) and (min-width:1000px){
-  .wrapper-sidebar {
-  width: 20% !important;
-  }
-  .wrapper-content{
-    width: 80%!important;
   }
 }
 

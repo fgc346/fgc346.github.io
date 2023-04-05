@@ -5,7 +5,7 @@ date: 2023-04-05
 author: ego
 tags: [Blog, GitHub, Note]
 comments: true
-toc: true
+toc: false
 pinned: false
 ---
 

@@ -9,7 +9,7 @@ toc: true
 pinned: false
 ---
 
-# C++文件读取操作
+## C++文件读取操作
 
 [toc]
 缘起：
@@ -45,9 +45,9 @@ LAS PHX
 
 如何将文件读入，并将每一行按“ ”分割
 
-## 1 字符串分割函数
+### 1 字符串分割函数
 
-### 1.1 string中的find和strsub实现
+#### 1.1 string中的find和strsub实现
 
 ```C++
 // source_str:待分割的字符串
@@ -74,7 +74,7 @@ void SplitString(const std::string& source_str, std::vector<std::string>& destin
   
 ```
 
-### 1.2 通过c语言的strtok函数实现
+#### 1.2 通过c语言的strtok函数实现
 
 ```C++
 方法2：
@@ -101,7 +101,7 @@ vector<string> split2(const string &str, const string &pattern)
 
 ```
 
-### 1.3 通过stringstream实现
+#### 1.3 通过stringstream实现
 
 注意这里面的分割符 只能是**char类型**，不能是字符串
 
@@ -123,7 +123,7 @@ vector<string> split3(const string &str, const char pattern)
 
 
 
-## 2 读取文件并对数据操作
+### 2 读取文件并对数据操作
 
 ```C++
     string file_name("file_1.txt");

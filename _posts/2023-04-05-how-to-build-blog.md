@@ -21,10 +21,18 @@ pinned: false
 
 对我来说，博客的外观页面只要看起来简单素雅，具有一定的美观性（作为一个工程师，对网站的要求就是文字美观，黑白搭配就蛮好了），重要的是博客本身的内容。因此，选择一个github上已经有的模板就可以了。
 
-本博客使用[FromEndWorld/LOFFER](https://github.com/FromEndWorld/LOFFER)模板进行搭建，在此向原作者表示感谢，具体使用方式在下一节详细介绍。
+本博客最开始使用[FromEndWorld/LOFFER](https://github.com/FromEndWorld/LOFFER)模板进行搭建，在此向原作者表示感谢，具体使用方式在下一节详细介绍。
 
 1. [zxl19/zxl19.github.io](https://github.com/zxl19/zxl19.github.io), 受到启发的博客，该博客也是使用该模板搭建。
+
 2. [FromEndWorld/LOFFER](https://github.com/FromEndWorld/LOFFER)， 使用的模板仓库。
+
+这个博客最开始就是根据[zxl19的博客](https://github.com/zxl19/zxl19.github.io)创建的第一版个人博客。不过，这个模板我不太喜欢的一点就是网站的侧边栏是固定的，占据了很大的空间，后面通过在知乎查询，并且对比了很多模板，最后选定了[oukohou.github.io](https://github.com/oukohou/oukohou.github.io)使用的模板，并在此基础上进行了若干修改。
+
+我去除了评论功能和一些个人不需要的配置。
+
+还根据oukohou博主的一篇博客[使用我的jekyll博客主题的注意事项](https://www.oukohou.wang/2018/12/18/notices-for-jekyll-themes-fork/)，对自己的博客内容进行了修改。
+
 
 博客模板涉及到两个知识点**Jekyll**和**Github Pages**，下面简单介绍一下两者的含义。
 
@@ -54,7 +62,7 @@ Github Pages的服务是免费的，但是也有一些限制：
 
 ### 搭建自己的博客内容
 
-具体参考模板提供的教程，请[点击这里](https://fromendworld.github.io/LOFFER/document/)
+以下，皆为首次创建博客的步骤，具体参考模板提供的教程，请[点击这里](https://fromendworld.github.io/LOFFER/document/)
 
 #### 第一步：进入博客模板的仓库
 
@@ -84,20 +92,21 @@ Github Pages的服务是免费的，但是也有一些限制：
 
 终于来到了核心的环节，发布博文。
 
-**_posts**目录就是专门存放博客文件的，你可以使用**markdown**、**Textile**（这个没听过）或者**html**格式的文件来写博客，我是用**markdown**格式写的。但是不管是哪种格式的文件都需要包含 [YAML](https://link.jianshu.com?t=http%3A%2F%2Fyaml.org%2F) 头信息， Jekyll 才会把它当做一个特殊的文件来处理。
+**_posts**目录就是专门存放博客文件的，你可以使用**markdown**, **html**格式的文件来写博客，我是用**markdown**格式写的。但是不管是哪种格式的文件都需要包含 [YAML](https://link.jianshu.com?t=http%3A%2F%2Fyaml.org%2F) 头信息， Jekyll 才会把它当做一个特殊的文件来处理。
 
 在**_posts**目录下新建一个**markdown**文件，头信息必须在文件的开始部分，并且需要按照 YAML 的格式写在两行三虚线之间。如下所示：
 
 ```
+---
 layout: post
 title: 标题信息
 date: 2023-04-05
 author: 作者
 tags: [Blog, GitHub, Note]
 comments: true
-toc: true
+categories: [教程]
 pinned: false
-
+---
 ...
 这里就可以使用markdown格式或其他格式写博客内容啦
 
@@ -118,8 +127,9 @@ pinned: false
 ## 参考
 
 1.  [Jekyll + Github Pages 博客搭建入门](https://www.jianshu.com/p/9f198d5779e6)
-2. [几条经验美化你的GitHub开源项目-简书](https://www.jianshu.com/p/d587b91bacb3)
-3. [simple-icons/simple-icons](https://github.com/simple-icons/simple-icons)
-4. [Maddoc42/Android-Material-Icon-Generator](https://github.com/Maddoc42/Android-Material-Icon-Generator)
-5. [Online Tools-RedKetchup](https://redketchup.io)
+2.  [有哪些简洁明快的 Jekyll 模板？](https://www.zhihu.com/question/20223939/answers/updated)
+3.  [几条经验美化你的GitHub开源项目-简书](https://www.jianshu.com/p/d587b91bacb3)
+4.  [simple-icons/simple-icons](https://github.com/simple-icons/simple-icons)
+5.  [Maddoc42/Android-Material-Icon-Generator](https://github.com/Maddoc42/Android-Material-Icon-Generator)
+6.  [Online Tools-RedKetchup](https://redketchup.io)
 6. [如何制作个人学术主页？-知乎](https://www.zhihu.com/question/281476526)

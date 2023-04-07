@@ -22,7 +22,7 @@ pinned: false
 
 例如一个文件 file_1.txt,内容如下
 
-```C++
+```
 JFK MCO
 ORD DEN
 ORD HOU
@@ -49,7 +49,7 @@ LAS PHX
 
 #### 1.1 string中的find和strsub实现
 
-```C++
+```
 // source_str:待分割的字符串
 // destination_strs:分割后的字符串,使用vector<string>
 // sp：分隔符
@@ -76,7 +76,7 @@ void SplitString(const std::string& source_str, std::vector<std::string>& destin
 
 #### 1.2 通过c语言的strtok函数实现
 
-```C++
+```
 方法2：
 通过strtok函数实现
 strtok为C语言中的字符串分割函数，其具体解释如下:
@@ -125,7 +125,7 @@ vector<string> split3(const string &str, const char pattern)
 
 ### 2 读取文件并对数据操作
 
-```C++
+```
     string file_name("file_1.txt");
 	std::ifstream srcFile(file_name, std::ios::in); // 以文本模式打开txt文件
     if (!srcFile.is_open())

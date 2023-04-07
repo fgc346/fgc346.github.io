@@ -4,7 +4,7 @@ title: C++从文件中读取数据
 date: 2023-04-06
 author: ego
 tags: [C++]
-comments: true
+categories: [教程]
 toc: true
 pinned: false
 ---

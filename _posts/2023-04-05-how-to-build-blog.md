@@ -4,7 +4,7 @@ title: 使用github搭建个人的博客记录
 date: 2023-04-05
 author: ego
 tags: [Blog, GitHub, Note]
-comments: true
+categories: [C++]
 toc: false
 pinned: false
 ---

@@ -342,8 +342,7 @@ img {
   height: 100%;
   top: 0;
   left: 0;
-  // position: fixed;
-  position: relative;
+  position: fixed;
   z-index: 4;
   border-right: 1px solid $divider-color;
 

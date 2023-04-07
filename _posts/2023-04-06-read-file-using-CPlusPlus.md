@@ -82,7 +82,10 @@ void SplitString(const std::string& source_str, std::vector<std::string>& destin
 strtok为C语言中的字符串分割函数，其具体解释如下:
 原型：char * strtok ( char * str, const char * delimiters );
 功能：分割字符串str，delimiters为指定的分割符，可以有多个。
-说明：strtok只能接受C风格的字符串，如果是string类型，可以使用c_str函数进行转换。strtok()用来将字符串分割成一个个片段。参数s指向欲分割的字符串，参数delim则为分割字符串，当strtok()在参数s的字符串中发现到参数delim的分割字符时 则会将该字符改为\0 字符。在第一次调用时，strtok()必需给予参数s字符串，往后的调用则将参数s设置成NULL。每次调用成功则返回被分割出片段的指针。
+说明：strtok只能接受C风格的字符串，如果是string类型，可以使用c_str函数进行转换。
+strtok()用来将字符串分割成一个个片段。参数s指向欲分割的字符串，参数delim则为分割字符串，
+当strtok()在参数s的字符串中发现到参数delim的分割字符时 则会将该字符改为\0 字符。
+在第一次调用时，strtok()必需给予参数s字符串，往后的调用则将参数s设置成NULL。每次调用成功则返回被分割出片段的指针。
 
 vector<string> split2(const string &str, const string &pattern)
 {

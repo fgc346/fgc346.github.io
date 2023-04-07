@@ -1,88 +1,53 @@
-旷世的忧伤 | Huoty's Blog
-=======================
+[我的独立博客](http://www.oukohou.wang/)
+=================================
 
-我的 Github 博客，博客模板引用自 [Harmony](https://github.com/gayanvirajith/harmony) 自适应 Jekyll 主题，并对其做了部分修改。
+一个简洁的、多设备支持的 Jekyll 博客模板，用于搭建[我的独立博客](http://www.oukohou.wang/)。  
+[我的独立博客](http://www.oukohou.wang/) 主题基于 [maupassant-jekyll](https://github.com/alafighting/maupassant-jekyll.git) 
+重新修改和优化，同时很大程度上参考了 [kuanghy](https://github.com/kuanghy) 的博客主题 [luring](https://github.com/kuanghy/luring)，感谢。  
+模板预览：
+![template preview](https://camo.githubusercontent.com/74fd2ccea00a682742515ce1d3725283c3385721/687474703a2f2f6f6f6f2e306f302e6f6f6f2f323031352f31302f32342f353632623562653132313737652e6a7067)  
+希望你在介绍自己的博客主题时，也能像上面一样，援引一下我的博客主题～～  
 
-- Built for jekyll 2.x
-- Supports Google analytics and RSS feeds
-- Sass based styles
-- Browser support: IE 8+, Chrome, Safari and Firefox
-- Fluidly responsive
 
-## About jekyll
+## **使用我的博客主题的注意事项：**  
+**首先要感谢你使用我的博客主题！**   
+我的博客主题里有一些自己定制化的内容，其中涉及到一些信息获取的事宜(比如百度统计的代码，你忘记修改的话，
+我可以直接获取到你的网站的各种访问信息呦🙈)，所以我一一都写在了 **[这篇博文](https://www.oukohou.wang/2018/12/18/notices-for-jekyll-themes-fork/ "对没错，就是是这篇超级暖心的博文")**
+ 里，敬请访问～～
+[![a_glimpse_of_this_blog](https://raw.githubusercontent.com/oukohou/image_gallery/master/blogs/notices_for_fork_theme/a_glimpse_of_this_blog.png)](https://www.oukohou.wang/2018/12/18/notices-for-jekyll-themes-fork/ "点击图像直达博文～～")  
+是不是超级暖心？🐼    
 
-[Jekyll](http://jekyllrb.com/) is a static site generator, an open-source tool for creating simple yet powerful websites of all shapes and sizes.
 
-## How to install/run
+## 主题安装
 
-1. Fork this repository.
-2. Clone it: git clone https://github.com/YOUR-USERNAME/harmony.
-3. If you're completely new to jekyll, please read more about [Jekyll](http://jekyllrb.com/) and [Github pages](https://help.github.com/articles/using-jekyll-with-pages).
-4. Change your directory into cloned repository.
-5. Run `bundle install`
-6. Edit the _config.yml on root directory. Change `url` property to to
-`http://127.0.0.1:4000` since you are going to run on localhost.
-7. Run the jekyll server by having: `jekyll serve --baseurl ''` or `rake preview`   
+安装 Jekyll 本地环境，以便于调试：
 
-Point your browser to [http://localhost:4000](http://localhost:4000).
-
-Note: If you are a windows user please refer to this nice website - http://jekyll-windows.juthilo.com/ by Julian Thilo to configure ruby + jekyll on windows.
-
-## Options/Usage
-
-Harmony has some customizable options. All the configuration details are
-configured in `_config.yml` file under root of the harmony directory.
-
-Feel free to change your `name`, `descriptionn`, `meta_description`, `author details`,
-`social media names` and `Google analytics id` accordingly.
-
-``` yml
-# Harmony theme configuration. Please change accordingly.
-harmony:
-  name: Harmony
-  # Little description about your site
-  description: Harmony is free responsive jekyll theme.
-  meta_description: Harmony is free responsive jekyll theme. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
-  basetheme: theme-base-01 # pre defined the{{ site.url | prepend: site.baseurl }}mes are darken, blue-water, reddish.
-  author: # Author details
-    name: Gayan Virajith
-    email: gayanvirajith@gmail.com
-    url: http://gayanvirajith.github.io
-
-  # Google Analytics key, leave blank to ignore
-  google_analytics_key: UA-xxxx-x
-
-  # Profile links, leave blank to ignore
-  social:
-    github: gayanvirajith
-    twitter: gayanvirajith
-    facebook: gayanvirajith
-    gplus: +GayanVirajith
-    dribble: gayan
-    pinterest:
-  # Toggle disclaimer in footer
-  show_disclaimer: true
+```bash
+gem install jekyll
+jekyll new my-awesome-site
+cd my-awesome-site
+bundle install
+bundle exec jekyll serve
+# => 打开浏览器 http://localhost:4000
 ```
 
-### Includes
+下载原作者主题安装调试：
 
-All the partial includes are under `_includes` directory.
+```bash
+git clone https://github.com/alafighting/maupassant-jekyll.git maupassant
+cd maupassant
+# 当然你也可以选择clone我的这个更改后的博客主题，只需改一下地址即可：
+# git clone https://github.com/oukohou/oukohou.github.io oukohou
+# cd oukohou
+gem install jekyll-paginate
+jekyll build
+jekyll server
+```
 
-#### Header navigation links
+**Any star, fork or [donation](https://www.oukohou.wang/donate/ "赏个铜板") is highly appreciated!!!**  
+![yasashii](https://raw.githubusercontent.com/oukohou/image_gallery/master/blogs/anime/%E6%B8%A9%E6%9F%94%E7%9A%84%E7%94%B7%E5%AD%A9%E5%AD%90.jpg "当然，女孩子会更温柔的啦～～")  
 
-Feel free to add/edit links for your header in the file `header-links.html`.
+------
 
-#### Footer links
-
-Customize your footer links by editing `_includes/footer-links.html`
-
-#### Copyrights/Disclaimer statements
-
-All copyright notes are under `_includes/footer.html`. Also note that you
-can toggle on/off copyright notes from the front-end by setting up `show_disclaimer`
-property in `_config.yml`.
-
-#### Feedback/Bugs/Suggestions
-
-Please submit as an [issue](https://github.com/web-create/harmony/issues/new),
-I am happy to response back.
+oukohou(<oukohou@outlook.com>)<br>
+2018-09-17

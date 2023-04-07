@@ -1,73 +1,89 @@
-# Harmony Jekyll theme general configurations
+# Site settings
+title: ego' blog
+subtitle: Don't be afraid to naive
+keywords: ego
+description: STAY YOUNG AND STAY SIMPLE
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://fgc346.github.io/" # 你的域名
+page_no_title: "ego's blog" # 文章无标题时默认显示内容
+beian: # "备案号"
+author: ego
+email: fgc346@163.com
 
-# Base URL
-baseurl:
+# Build settings
+permalink: /:year/:month/:day/:title/
+exclude: ["README.md", "changelog.md", "server", "tools", "Pipfile"]
+plugins:
+  - jekyll-paginate
+  - jemoji
 
-# Site live URL
-url: http://fgc346.github.io
 
-# Localhost
-# url: http://127.0.0.1:4000
-
-# Production URL for sitemap
-production_url: http://fgc346.github.io
-
-# Harmony theme configuration. Please change accordingly.
-harmony:
-  name: ego's Blog
-  # Little description about your site
-  description: STAY YOUNG AND STAY SIMPLE, don't be afraid to be naive
-  # 'meta_description:' Write an awesome description for your new site here.
-  # It will appear in your document head meta (for Google search results) and
-  # in your feed.xml site description.
-  meta_description: > #
-   一个工程师的存档点，记录所感所想所思。
-   分享一些技术和工作上的经验。
-  basetheme: theme-base-01 # pre defined thmes are darken, blue-water, redish.
-  author: # Author details
-    name: ego
-    email: fgc346@163.com
-    #url: http://konghy.cn
-
-  # Google Analytics key, leave blank to ignore
-  google_analytics_key: UA-xxxx-x
-
-  # Profile links, leave blank to ignore
-  social:
-    github:
-    twitter:
-    facebook:
-    gplus:
-    dribble:
-    pinterest:
-  social_zh:
-    email: sudohuoty@163.com
-    weibo: 
-    github: fgc346
-    qq:
-    wechat:
-    rss: /feed
-  # Toggle disclaimer in footer
-  show_disclaimer: false
-
-# Conversion / Build settings
-markdown:    kramdown
-# This is how you put pygments config in jekyll 2.0 instead of pygments: true
+# always get github's error email saying redcarpet is not supported,
+# so change it to kramdown.
+markdown: kramdown
 highlighter: rouge
+kramdown:
+  input: GFM
 
-# Permalinks
-permalink: /:year/:month/:day/:title
 
-exclude:
-  - CNAME
-  - Gemfile
-  - Rakefile
-  - README.md
-  - .gitignore
-  - .sass-cache
-  - Gemfile.lock
+# Pageinate settings
+paginate: 8 # 分页大小
+paginate_path: "page/:num/"
 
-# Sass conversion configs
-sass:
-    sass_dir: assets/css/_sass
-    style: :compressed
+# Search settings
+baidu_search: true
+google_search: # true
+
+# Menu settings
+menu:
+  - page: 首页
+    directory: .
+    icon: icon-home
+  - page: 归档
+    directory: archives/
+    icon: icon-archive
+  - page: 标签
+    directory: tags/
+    icon: icon-tags
+  # - page: 留言
+  #   directory: guestbook/
+  #   icon: icon-guestbook
+  - page: 关于
+    directory: about/
+    icon: icon-about
+#  - page: 订阅
+#    directory: feed.xml
+#    icon: icon-rss
+
+# Link settings
+links: # 友情链接
+  - title: ego's github
+    url: https://github.com/fgc346
+#  - title:
+#    url: http://jekyllcn.com/
+  - title: Jekyll blog system
+    url: http://jekyllcn.com/
+
+
+# Google Analytics
+ga_track_id: 'UA-130856615-1'            # Format: UA-xxxxxx-xx
+ga_domain: auto              # 默认的是 auto, 这里我是自定义了的域名，你如果没有自己的域名，需要改成auto
+
+
+# Code hub settings
+codehub: # 代码仓库
+  - title: Github
+    url: https://github.com/fgc346
+
+
+# valine:
+#   enable: true
+#   app_id:  K1rbn2Oo0YMM04VuzdLS7Nzz-gzGzoHsz
+#   app_key: AAsHbwVm8ofKFJ6ghGqqrXSU
+#   notify: false # mail notifier , https://github.com/xCss/Valine/wiki
+#   verify: false # Verification code
+#   visitor: true
+#   avatar: retro
+#   placeholder: say something~~\n - 昵称 为你所要显示的评论的ID；\n - 邮箱 只有后台可见，仅供讨论过程中是否需要交流邮件而设置，请放心填写;\n - 网址 为你的评论的昵称的超链接。\n当然，以上都可以不写，评论依然会显示……
+#   guest_info: nick,mail,link
+#   pageSize: 10

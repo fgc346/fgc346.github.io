@@ -1,52 +1,73 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+# Harmony Jekyll theme general configurations
 
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
-title: ego's Blog
-author: ego
-email: fgc346@163.com
-description: > # this means to ignore newlines until "baseurl:"
-  自动驾驶/工程师
-url: http://fgc346.github.io # the base hostname & protocol for your site, e.g. http://example.com
-sitesearchurl: fgc346.github.io
-baseurl: "" # the subpath of your site, e.g. /blog
+# Base URL
+baseurl:
 
-# Markdown Processors
-markdown: kramdown
+# Site live URL
+url: http://fgc346.github.io
 
-plugins:
-  - jekyll-paginate
-paginate: 8
-paginate_path: "/pages:num/"
+# Localhost
+# url: http://127.0.0.1:4000
 
-mathjax: false
+# Production URL for sitemap
+production_url: http://fgc346.github.io
 
-excerpt_separator: <!-- more -->
+# Harmony theme configuration. Please change accordingly.
+harmony:
+  name: ego's Blog
+  # Little description about your site
+  description: STAY YOUNG AND STAY SIMPLE, don't be afraid to be naive
+  # 'meta_description:' Write an awesome description for your new site here.
+  # It will appear in your document head meta (for Google search results) and
+  # in your feed.xml site description.
+  meta_description: > #
+   一个工程师的存档点，记录所感所想所思。
+   分享一些技术和工作上的经验。
+  basetheme: theme-base-01 # pre defined thmes are darken, blue-water, redish.
+  author: # Author details
+    name: ego
+    email: fgc346@163.com
+    #url: http://konghy.cn
 
-permalink: /:categories/:title.html
+  # Google Analytics key, leave blank to ignore
+  google_analytics_key: UA-xxxx-x
 
-social_media:
-  github_url: https://github.com/fgc346
+  # Profile links, leave blank to ignore
+  social:
+    github:
+    twitter:
+    facebook:
+    gplus:
+    dribble:
+    pinterest:
+  social_zh:
+    email: sudohuoty@163.com
+    weibo: 
+    github: fgc346
+    qq:
+    wechat:
+    rss: /feed
+  # Toggle disclaimer in footer
+  show_disclaimer: false
 
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+# Conversion / Build settings
+markdown:    kramdown
+# This is how you put pygments config in jekyll 2.0 instead of pygments: true
+highlighter: rouge
+
+# Permalinks
+permalink: /:year/:month/:day/:title
+
+exclude:
+  - CNAME
+  - Gemfile
+  - Rakefile
+  - README.md
+  - .gitignore
+  - .sass-cache
+  - Gemfile.lock
+
+# Sass conversion configs
+sass:
+    sass_dir: assets/css/_sass
+    style: :compressed

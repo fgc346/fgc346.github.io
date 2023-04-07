@@ -1,4 +1,7 @@
---- --- //
+---
+---
+
+//
 // IMPORTS
 //
 
@@ -29,12 +32,7 @@ body {
   width: 100%;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
   line-height: 2em;
   margin: 1em 0 16px;
   padding: 0;
@@ -44,16 +42,12 @@ h6 {
   }
 }
 
-h1,
-h2,
-h3,
-h5 {
+h1, h2, h3, h5 {
   font-weight: bold;
 }
 
 h1 {
   font-size: 30px;
-
   a {
     color: inherit;
   }
@@ -91,19 +85,16 @@ a {
   -o-transition: all 0.5s;
   transition: all 0.5s;
 
-  &:hover,
-  &:active {
+  &:hover, &:active {
     color: $link-lighten-color;
   }
 }
 
-em,
-i {
+em, i {
   font-style: italic;
 }
 
-strong,
-b {
+strong, b {
   font-weight: bold;
 }
 
@@ -126,9 +117,8 @@ hr {
 // Yeun's list style
 // https://gist.github.com/yeun/d824fc7b04b756508f4b0143535cec30
 
-ol,
-ul {
-  >li {
+ol, ul {
+  > li {
     &:before {
       position: absolute;
       width: $li-bullets-width;
@@ -141,7 +131,7 @@ ul {
 }
 
 ul {
-  >li:before {
+  > li:before {
     content: "\2022";
     padding-right: $ul-bullets-right-space;
     font-family: $ul-bullets-font;
@@ -153,7 +143,7 @@ ul {
 ol {
   counter-reset: section;
 
-  >li:before {
+  > li:before {
     counter-increment: section;
     content: counter(section) ".";
     padding-right: $ol-bullets-right-space;
@@ -163,24 +153,22 @@ ol {
   }
 }
 
-ol,
-ul {
-  >li {
+ol, ul {
+  > li {
     margin: 0 auto $li-bottom-space $li-bullets-width;
     line-height: $li-line-height;
 
-    >ol,
-    >ul {
+    > ol,
+    > ul {
       margin-top: $li-bottom-space;
     }
   }
 }
 
 li {
-
-  >ol,
-  >ul {
-    >li {
+  > ol,
+  > ul {
+    > li {
       font-size: ($li-child-size-ratio * 1em);
       margin: 0 auto ($li-bottom-space * $li-child-size-ratio) ($li-bullets-width * $li-child-size-ratio);
     }
@@ -221,8 +209,7 @@ table {
   border-collapse: collapse;
 }
 
-td,
-th {
+td, th {
   padding: .25rem .5rem;
   border: 1px solid $table-border-color;
 }
@@ -250,7 +237,6 @@ blockquote {
 
 // Footnote
 a.footnote {
-
   &,
   .post p &,
   .post ol &,
@@ -291,12 +277,11 @@ img {
 
 // Specify the color of the selection
 ::-moz-selection {
-  //  color: $selection-color;
+//  color: $selection-color;
   background: $selection-background-color;
 }
-
 ::selection {
-  //  color: $selection-color;
+//  color: $selection-color;
   background: $selection-background-color;
 }
 
@@ -304,12 +289,12 @@ img {
 // http://nicolasgallagher.com/micro-clearfix-hack/
 .clearfix:before,
 .clearfix:after {
-  content: " ";
-  display: table;
+    content: " ";
+    display: table;
 }
 
 .clearfix:after {
-  clear: both;
+    clear: both;
 }
 
 // Alignment
@@ -336,14 +321,14 @@ img {
 
 .wrapper-sidebar {
   width: 30%;
-  -webkit-background-size: cover;
-  background-size: cover;
-  background-color: $background-color;
-  height: 100%;
-  top: 0;
-  left: 0;
-  position: fixed;
-  z-index: 4;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-color: $background-color;
+	height: 100%;
+	top: 0;
+	left:0;
+	position: fixed;
+	z-index: 4;
   border-right: 1px solid $divider-color;
 
   @include mobile {
@@ -356,7 +341,6 @@ img {
   }
 }
 
-
 .sidebar {
   padding: 20px 0;
 
@@ -366,7 +350,7 @@ img {
 }
 
 .site-info {
-  text-align: center;
+  text-align:center;
   margin: 100px auto 0;
 
   @include mobile {
@@ -376,7 +360,7 @@ img {
   }
 
   .site-avatar {
-    margin: 0 auto;
+    margin:0 auto;
     display: block;
     max-width: 200px;
     max-height: 200px;
@@ -413,8 +397,8 @@ img {
   }
 }
 
-.navlist {
-  text-align: center;
+.navlist{
+  text-align:center;
 }
 
 nav {
@@ -454,19 +438,9 @@ nav {
   }
 }
 
-@media screen and (max-width:2200px) and (min-width:1000px) {
-  .wrapper-sidebar {
-    width: 20% !important;
-  }
-
-  .wrapper-content {
-    width: 80% !important;
-  }
-}
-
 // Posts
 
-.posts {
+.posts{
 
   .tag {
     display: inline;
@@ -481,7 +455,7 @@ nav {
       display: inline;
       margin: 0;
 
-      >a {
+      > a {
         margin: 3px 3px 3px 0;
         padding: .5px 4px;
         color: $base-color;
@@ -490,19 +464,19 @@ nav {
 
         &:hover {
           color: $link-color;
-          background-color: $link-bghv-color;
+          background-color:$link-bghv-color;
         }
       }
     }
   }
 }
 
-.posts>.post {
+.posts > .post {
   padding-bottom: 2em;
   border-bottom: 1px solid $divider-color;
 }
 
-.posts>.post:last-child {
+.posts > .post:last-child {
   padding-bottom: 1em;
   border-bottom: none;
 }
@@ -522,9 +496,9 @@ nav {
   margin-right: 4px;
 }
 
-.author {
-  font-weight: 700;
-  font-size: $small-font-size;
+.author{
+  font-weight:700;
+  font-size:$small-font-size;
   color: $base-lighten-color;
   margin-right: 4px;
 }
@@ -547,10 +521,10 @@ nav {
 }
 
 .page {
-  //  margin: 40px;
+//  margin: 40px;
 
   @include mobile {
-    //    margin: 24px;
+//    margin: 24px;
   }
 }
 
@@ -560,14 +534,13 @@ nav {
   width: 240px;
   height: 100%;
   left: 30%;
-  // position: fixed;
-  position: relative; // fgc,modify
+  position: fixed;
   z-index: 4;
   padding: 60px 20px 0 20px;
   overflow-y: auto;
-
-  &:before {
-    content: "目录";
+  
+  &:before{
+    content:"目录";
     margin: 0 0 1em 1em;
     font-weight: 700;
     font-size: 1.2em;
@@ -576,17 +549,17 @@ nav {
     border-bottom: 3px double $divider-color;
   }
 
-  li:before {
-    content: "";
+  li:before{
+    content:"";
   }
 
-  @include mobile {
-    display: none;
+  @include mobile{
+    display:none;
   }
 }
 
-@media screen and (max-width:2200px) and (min-width:1200px) {
-  .withtoc {
+@media screen and (max-width:2200px) and (min-width:1200px){
+  .withtoc{
     padding-left: 260px;
   }
 }
@@ -605,18 +578,16 @@ nav {
     padding: 24px 0;
   }
 
-  >.prev {
+  > .prev {
     float: left;
     width: 50%;
-
     a {
       color: $base-lighten-color;
       border: 1px solid $divider-color;
       padding: 10px 20px;
       background: $background-color;
 
-      &:hover,
-      &:focus {
+      &:hover, &:focus {
         color: $link-lighten-color;
         border: 1px solid $link-lighten-color;
         background-color: $link-bghv-color;
@@ -624,19 +595,17 @@ nav {
     }
   }
 
-  >.next {
+  > .next {
     float: right;
     text-align: right;
     width: 50%;
-
     a {
       color: $base-lighten-color;
       border: 1px solid $divider-color;
       padding: 10px 20px;
       background: $background-color;
 
-      &:hover,
-      &:focus {
+      &:hover, &:focus {
         color: $link-lighten-color;
         border: 1px solid $link-lighten-color;
         background-color: $link-bghv-color;
@@ -650,7 +619,6 @@ nav {
   a {
     color: $base-color;
   }
-
   time {
     color: $base-lighten-color;
     font-size: $small-font-size;
@@ -660,18 +628,18 @@ nav {
 }
 
 // Tags
-.tags>.label {
-  >li:before {
+.tags > .label {
+  > li:before {
     content: "";
   }
 
-  >li {
+  > li {
     margin: 0;
     font-size: $small-font-size;
     font-weight: 300;
     display: inline;
 
-    >a {
+    > a {
       display: inline-block;
       margin: 1px;
       color: $base-color;
@@ -696,11 +664,10 @@ nav {
   }
 }
 
-.tags>.tag {
+.tags > .tag {
   a {
     color: $base-color;
   }
-
   time {
     color: $base-lighten-color;
     font-size: $small-font-size;
@@ -717,10 +684,10 @@ nav {
   border-top: 1px solid $footer-border-color;
   background-color: $footer-background-color;
   position: absolute;
-  clear: both;
-  width: 100%;
-  bottom: 0;
-
+  clear:both;
+  width:100%;
+  bottom:0;
+  
   @include mobile {
     display: none;
   }
@@ -729,7 +696,7 @@ nav {
 
 .wrapper-footer-mobile {
   display: none;
-
+  
   @include mobile {
     display: block;
     width: 100%;
@@ -763,7 +730,7 @@ footer {
       height: 20px;
       width: 20px;
       fill: $base-lighten-color;
-
+      
       &:hover {
         fill: $link-lighten-color;
       }
@@ -787,3 +754,5 @@ footer {
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";
 @import "gitalk";
+
+

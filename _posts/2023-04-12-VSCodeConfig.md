@@ -1,7 +1,7 @@
 ---
 layout: post
 title: VScode中配置C/C++环境
-date: 2023-04-11
+date: 2023-04-12
 author: ego
 tags: [C++] [工具]
 categories: [C++]
@@ -42,7 +42,7 @@ VScode中进行C/C++环境时，需要配置launch.json和tasks.json，这两个
 | ${pathSeparator}           | 系统文件分割符                             |
 | ${env:PATH}                | 系统中的环境变量                           |
 
-### 一个具体的预定于空间的例子
+### 一个具体的预定义变量的例子
 
 ![image-20230412182921270](https://raw.githubusercontent.com/fgc346/image/main/img/image-20230412182921270.png)
 
@@ -118,8 +118,12 @@ int main()
     }
   ]
 }
+```
 上述的tasks.json配置了一个编译c++的程序
+```
+
 g++ -g -o "${workspaceFolder}/build/${workspaceFolderBasename}" "${workspaceFolder}/*.cpp"
+
 如上所述的全局变量
 ${workspaceFolder} : vs_cpulsplus_demo
 {workspaceFolderBasename} : vs_cpulsplus_demo

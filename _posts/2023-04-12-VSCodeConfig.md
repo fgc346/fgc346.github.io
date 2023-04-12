@@ -1,6 +1,6 @@
 ---
 layout: post
-title: VScode中配置C/C++环境
+title: VScode中配置C++环境
 date: 2023-04-12
 author: ego
 tags: [C++] [工具]

@@ -120,6 +120,10 @@ https://blog.csdn.net/qq_37454669/article/details/123782139
 
 `lower_bound( )`函数与`upper_bound( )`函数都是基于二分搜索操作的函数，其操作对象是有序的。`lower_bound( )`函数返回指向第一个**不小于**给定值的元素的迭代器，`upper_bound( )`函数返回指向第一个**大于**给定值的元素的迭代器。
 
+对这两个函数的理解，一图胜千言。
+
+![image-20230413091713207](https://raw.githubusercontent.com/fgc346/image/main/img/image-20230413091713207.png)
+
 ### 6.1 使用自定义比较函数
 
 自定义的比较函数，可以是自己重载的`operator<`函数，也可以是仿函数，纯比较函数，或者lambda表达式。下面，我采用lambda进行说明。

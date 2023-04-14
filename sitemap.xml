@@ -1,35 +1,62 @@
----
-# Remember to set production_url in your _config.yml file!
-title : Sitemap
----
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-    {% for post in site.posts %}
-    <url>
-      <loc>{{ post.url | prepend: site.baseurl | prepend: site.url }}</loc>
-      <changefreq>daily</changefreq>
-      <lastmod>{{ post.date | date: "%Y-%m-%d"}}</lastmod>
-      <priority>1.0</priority>
-    </url>
-    {% endfor %}
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
-    {% for page in site.pages %}
-    {% if page.layout != nil %}
-    {% if page.layout != 'feed' %}
-    {% if page.group == 'navigation' %}
-    <url>
-      <loc>{{ page.url | remove: 'index.html' | prepend: site.baseurl | prepend: site.url }}</loc>
-      <changefreq>monthly</changefreq>
-      <priority>0.80</priority>
-    </url>
-    {% endif %}
-    {% endif %}
-    {% endif %}
-    {% endfor %}
 
-    <url>
-      <loc>{{ site.baseurl | prepend: site.url }}</loc>
-      <changefreq>daily</changefreq>
-      <priority>0.6</priority>
-    </url>
+<url>
+  <loc>https://fgc346.github.io/</loc>
+  <lastmod>2023-04-13T01:21:12+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://fgc346.github.io/.</loc>
+  <lastmod>2023-04-13T01:21:12+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://fgc346.github.io/archives/</loc>
+  <lastmod>2023-04-13T01:21:12+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://fgc346.github.io/tags/</loc>
+  <lastmod>2023-04-13T01:21:12+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://fgc346.github.io/about/</loc>
+  <lastmod>2023-04-13T01:21:12+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://fgc346.github.io/2023/04/12/VSCodeConfig/</loc>
+  <lastmod>2023-04-13T01:21:12+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://fgc346.github.io/2023/04/07/STL-learning/</loc>
+  <lastmod>2023-04-13T01:21:12+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://fgc346.github.io/2023/04/06/read-file-using-CPlusPlus/</loc>
+  <lastmod>2023-04-13T01:21:12+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://fgc346.github.io/2023/04/05/how-to-build-blog/</loc>
+  <lastmod>2023-04-13T01:21:12+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://fgc346.github.io/category/</loc>
+  <lastmod>2023-04-13T01:21:12+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+
 </urlset>

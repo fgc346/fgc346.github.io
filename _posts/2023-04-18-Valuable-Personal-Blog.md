@@ -16,3 +16,5 @@ pinned: false
 3. [Evan's blog](https://xugaoyi.com/) 
 4. [sterben-01](https://sterben-01.github.io/)
 5. [绿色记忆](https://blog.gmem.cc/)
+6. [Liuye](https://liuyehcf.github.io/)
+7. [mythsman](https://blog.mythsman.com/)

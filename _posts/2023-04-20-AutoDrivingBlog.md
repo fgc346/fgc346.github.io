@@ -11,3 +11,4 @@ pinned: false
 
 1. [王方浩Apollo笔记](https://dig-into-apollo.readthedocs.io/en/latest/modules/planning/readme.html)
 2. [Apollo整体架构文档](https://daobook.github.io/apollo-book/docs/start/00_intro.html)
+3. [windSeS的csdn博客](https://windses.blog.csdn.net/?type=blog)

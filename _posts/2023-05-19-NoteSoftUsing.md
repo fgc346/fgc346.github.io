@@ -1,20 +1,17 @@
 ---
 layout: post
-title:使用的笔记软件汇总
+title: 使用的笔记软件汇总
 date: 2023-05-19
 author: ego
 tags: [工具]
 categories: [工具]
 toc: true
 pinned: false
-
 ---
 
 
 
 目前在使用中的笔记有好几种，总结归类如下。
-
-[TOC]
 
 # 笔记软件
 

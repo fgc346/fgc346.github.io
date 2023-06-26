@@ -18,3 +18,5 @@ pinned: false
 5. [绿色记忆](https://blog.gmem.cc/)
 6. [Liuye](https://liuyehcf.github.io/)
 7. [mythsman](https://blog.mythsman.com/)
+8. [李博杰的博客](https://ring0.me/)
+9. [罗龙的博客](http://www.longluo.me/)

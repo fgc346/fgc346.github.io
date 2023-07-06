@@ -88,4 +88,5 @@ nohup并不是一个让进程后台运行的命令，**nohup只是让该进程�
 ## 参考
 1. [菜鸟教程nohup使用](https://www.runoob.com/linux/linux-comm-nohup.html)
 2. 书籍《Linux管理与开发实用指南》
+3. [让进程在后台可靠运行的几种方法](https://blog.51cto.com/u_16080829/6412697)
 

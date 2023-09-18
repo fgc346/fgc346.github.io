@@ -11,6 +11,7 @@ pinned: false
 ## 1 问题背景
 平时主要在ubuntu下开发，经常会使用到vim和Tmux。vim操作会用到Esc键，Tmux快捷键为Ctrl +b。而大写键Caps这个位置很好的键基本上不使用。所以考虑将这个键映射为Esc和Ctrl键。
 最后想要实现的效果为：
+
 单击Caps键，等于按Esc；
 长按Caps键，等于按Ctrl。
 ## 2 解决方案
@@ -70,7 +71,9 @@ sudo vim /etc/udevmon.yaml
 sudo vim /etc/systemd/system/udevmon.service
 ```
 /etc/systemd/system/udevmon.service内容如下：
-需要注意的是，2.2.2节中执行完sudo make install，要注意查看udevmon这个程序的安装位置
+
+需要注意的是，2.2.2节中执行完sudo make install，查看udevmon这个程序的安装位置
+
 ```
 使用which查看udevmon安装位置
 ~$ which udevmon
@@ -97,5 +100,5 @@ sudo systemctl enable --now udevmon
 ```
 完成以上步骤后，就可以实现Caps映射为Esc和Ctrl的效果。
 ## 参考
-1 [https://www.notion.so/Caps-Esc-Ctrl-c13a0a99a33048fdb776c2f58b7a3583](https://www.notion.so/Caps-Esc-Ctrl-c13a0a99a33048fdb776c2f58b7a3583)
-2 [https://blog.csdn.net/Nielson_19/article/details/130325553](https://blog.csdn.net/Nielson_19/article/details/130325553)
+1. [https://www.notion.so/Caps-Esc-Ctrl-c13a0a99a33048fdb776c2f58b7a3583](https://www.notion.so/Caps-Esc-Ctrl-c13a0a99a33048fdb776c2f58b7a3583)
+2. [https://blog.csdn.net/Nielson_19/article/details/130325553](https://blog.csdn.net/Nielson_19/article/details/130325553)

@@ -20,6 +20,7 @@ pinned: false
 ![image.png](https://raw.githubusercontent.com/fgc346/image/main/img/1694161271204-7b1faa89-989f-4265-9a5c-6470927d325a.png)
 
 ## 2 导航和跳转快捷键  
+
 | key | description | 备注 |
 | --- | --- | --- |
 | Ctrl + 0 (表示，同时按ctrl和0，以下均相同） | 聚焦侧边栏 | 从编辑区跳转到侧边栏 |

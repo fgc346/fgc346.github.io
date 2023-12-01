@@ -26,6 +26,9 @@ pinned: false
 | Ctrl + 0 (表示，同时按ctrl和0，以下均相同） | 聚焦侧边栏 | 从编辑区跳转到侧边栏 |
 | Ctrl + P | 按名称搜索文件 | 在调试遇到问题，编译器报错时，可以根据文件名:行数，快速跳转到指定的代码区域 |
 | Ctrl + G | 在文件中跳转到指定行数 |  |
+| Ctrl + B | 切换显示或隐藏资源管理器 | 把左侧导航栏的资源管理器关闭，使编辑区显示区域变大 |
+| Ctrl + W | 关闭当前打开的文件 | 这个使用的频率很高，可以方便地不用鼠标，就可以关闭当前的页面 |
+
 
 ## 参考
 1 VScode在终端和编辑器之间切换  [[https://blog.csdn.net/Jeffxu_lib/article/details/86651173](https://blog.csdn.net/Jeffxu_lib/article/details/86651173)]  

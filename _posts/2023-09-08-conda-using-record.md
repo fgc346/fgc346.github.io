@@ -35,3 +35,8 @@ conda remove -n test --all
 ```
 conda env list
 ```
+
+## conda 升级 jupyter notebook
+1 使用jupyter --version查看当前jupyter notebook版本  
+2 升级jupyter notebook  
+3 升级jupyter-lab到3.0  

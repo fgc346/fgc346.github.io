@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Tmux使用汇总
-date: 2023-12-1
+date: 2023-12-01
 author: ego
 tags: [工具]
 categories: [工具]
@@ -29,8 +29,8 @@ apt-get install tmux
 - Pane 窗格，将一个屏幕分割为多个小窗口，可以实现分屏的功能。
 
 下图是一个形象的三层的展示：  
-![image.png](https://cdn.nlark.com/yuque/0/2023/png/22895350/1701400553142-860b2a05-1515-4426-ab3e-2ca118228a46.png#averageHue=%23caeb74&clientId=u6bf06ebf-a61a-4&from=paste&height=2750&id=u67cef434&originHeight=2750&originWidth=5819&originalType=binary&ratio=1&rotation=0&showTitle=false&size=3122331&status=done&style=none&taskId=ua897398c-a098-4fec-8244-af8eeec9987&title=&width=5819)
-解释：
+
+![image-20231201131236345](https://raw.githubusercontent.com/fgc346/image/main/img/image-20231201131236345.png)解释：
 session总是显示在tmux的左下角，通常有一个名字，windows类似于tab形式，pane就是不同的窗口细分小窗口。  
 
 # 使用记录
@@ -96,3 +96,4 @@ tmux source-file .tmux.conf
 2. [https://blog.csdn.net/ddydavie/article/details/79031564](https://blog.csdn.net/ddydavie/article/details/79031564)  
 3. [https://www.ruanyifeng.com/blog/2019/10/tmux.html](https://www.ruanyifeng.com/blog/2019/10/tmux.html)  
 4. [https://apple.stackexchange.com/questions/217166/unknown-option-mode-mouse-with-iterm-tmux](https://apple.stackexchange.com/questions/217166/unknown-option-mode-mouse-with-iterm-tmux)
+4. https://cenalulu.github.io/linux/tmux/

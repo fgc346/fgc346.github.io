@@ -55,12 +55,12 @@ set -g mouse on
 ```
 ## 3 分屏下使用鼠标复制的方法
 通常使用tmux时会用shift+鼠标选中内容,然后右键复制。但正如图中的情况，存在分屏也会将左边的内容一并拷贝。  
-**解决方法：  **  
+**解决方法：**  
 一个比较方便的解决办法是ctrl+b+z，将需要的复制内容所在的面板最大化，再用上述通用的复制方法复制，复制完成后再ctrl+b+z，恢复之前的视图。  
 
 ## 4 tmux如何自定义配置文件
 电脑的tmux的版本是 tmux 2.6。发现网上说的自定义配置文件不对。  
-~~网上给的配置文件项  ~~
+网上给的配置文件项  
 ```
 #Mouse mode
 # tmux 2.6版本不生效
@@ -96,4 +96,4 @@ tmux source-file .tmux.conf
 2. [https://blog.csdn.net/ddydavie/article/details/79031564](https://blog.csdn.net/ddydavie/article/details/79031564)  
 3. [https://www.ruanyifeng.com/blog/2019/10/tmux.html](https://www.ruanyifeng.com/blog/2019/10/tmux.html)  
 4. [https://apple.stackexchange.com/questions/217166/unknown-option-mode-mouse-with-iterm-tmux](https://apple.stackexchange.com/questions/217166/unknown-option-mode-mouse-with-iterm-tmux)
-4. https://cenalulu.github.io/linux/tmux/
+4. [https://cenalulu.github.io/linux/tmux/](https://cenalulu.github.io/linux/tmux/)

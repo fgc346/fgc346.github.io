@@ -124,6 +124,35 @@ pinned: false
 
 由于博客仓库通过博客模板构建，在博客模板更新后无法通过Pull Request的方式进行同步。为实现对于博客模板更新的同步，可以保留`_posts`文件夹下的文件(模板中的文件最前面添加.,作为隐藏文件)，将其他文件直接替换为更新后博客模板中的文件，在进行简单配置后即可完成同步更新。
 
+### 博客中的表格不能正常显示，不能显示边框
+如果觉得表格显示的比较丑，可以修改相应的css样式。
+```
+修改的路径为 assets/css/styles.css
+解决方案：
+1 首先把原来的带table的css样式注释
+2 然后添加新的css样式
+```
+新的css样式代码如下：  
+```
+table {
+    border-left: 1px solid #000000;
+    border-top: 1px solid #000000;
+    width: 100%;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+table th {
+    text-align: center;
+}
+
+table th,
+td {
+    border-right: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+}
+```
+
 ## 参考
 
 1.  [Jekyll + Github Pages 博客搭建入门](https://www.jianshu.com/p/9f198d5779e6)
@@ -132,4 +161,5 @@ pinned: false
 4.  [simple-icons/simple-icons](https://github.com/simple-icons/simple-icons)
 5.  [Maddoc42/Android-Material-Icon-Generator](https://github.com/Maddoc42/Android-Material-Icon-Generator)
 6.  [Online Tools-RedKetchup](https://redketchup.io)
-6. [如何制作个人学术主页？-知乎](https://www.zhihu.com/question/281476526)
+7. [如何制作个人学术主页？-知乎](https://www.zhihu.com/question/281476526)  
+8. [MarkDown中的表格在jekyll的pages博客中不能正常显示](https://blog.csdn.net/sdujava2011/article/details/83692576)

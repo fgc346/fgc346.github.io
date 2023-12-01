@@ -28,5 +28,5 @@ pinned: false
 | Ctrl + G | 在文件中跳转到指定行数 |  |
 
 ## 参考
-1 VScode在终端和编辑器之间切换  [https://blog.csdn.net/Jeffxu_lib/article/details/86651173](https://blog.csdn.net/Jeffxu_lib/article/details/86651173)  
+1 VScode在终端和编辑器之间切换  [[https://blog.csdn.net/Jeffxu_lib/article/details/86651173](https://blog.csdn.net/Jeffxu_lib/article/details/86651173)]  
 2 VScode快捷键 [[http://www.cocoding.cc/post/ide/vscode-shortcuts/](http://www.cocoding.cc/post/ide/vscode-shortcuts/)]

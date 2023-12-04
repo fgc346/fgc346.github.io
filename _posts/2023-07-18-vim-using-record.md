@@ -20,6 +20,20 @@ pinned: false
 ESC键进入普通模式，先按gg(光标跳转到文档第一行)，
 然后ggyG操作，最后按回车键。已经将全文拷贝到剪切板。
 ```
+### 2.2 去掉vim每行结尾的^M
+问题产生的原因：
+```
+windows的换行符是\n\r
+linux的换行符是\n
+```
+在 vim下， 这个多余的\r就会被显示为^M，虽然显示为两个字符，但其实是一个字符。  
+解决方法：
+```
+1 字符串替换：
+:%s/\r//g
+2 将文件格式转化为unix格式：
+:set ff=unix
+```
 ## 3 学习资料
 ### 3.1 书籍
 1. [Vim 实用技巧(第二版)](https://agou-images.oss-cn-qingdao.aliyuncs.com/pdfs/Vim%E5%AE%9E%E7%94%A8%E6%8A%80%E5%B7%A7%EF%BC%88%E7%AC%AC2%E7%89%88%EF%BC%89.pdf)
@@ -27,4 +41,5 @@ ESC键进入普通模式，先按gg(光标跳转到文档第一行)，
 
 ## 参考
 1. [Vim系列教程](https://www.kawabangga.com/vim%e7%b3%bb%e5%88%97)
+2. [去掉 vim 每行结尾的 ^M](https://zhiqiang.org/it/remove-m-from-vim.html)
 

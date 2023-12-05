@@ -62,7 +62,7 @@ set -g mouse on
 一个比较方便的解决办法是ctrl+b+z，将需要的复制内容所在的面板最大化，再用上述通用的复制方法复制，复制完成后再ctrl+b+z，恢复之前的视图。  
 
 ## 4 tmux如何自定义配置文件
-电脑的tmux的版本是 tmux 2.6。发现网上说的自定义配置文件不对。  
+电脑的tmux的版本是 tmux 2.6。发现网上a找的自定义配置文件本机使用不生效。  
 网上给的配置文件项  
 ```
 #Mouse mode
@@ -93,7 +93,7 @@ set-option -g mouse on
 1 在终端运行命令：
 tmux source-file .tmux.conf 
 ```
-**关于配置文件的说明 **  
+**关于配置文件的说明**  
 网上有很多tmux的配置文件，但是都没有标明适用的tmux的版本。  
 在本机电脑使用tmux时，发现tmux自定义配置的命令一直在迭代升级，有些命令是不兼容的。从网上直接粘贴过来的相关配置不一定能在自己的tmux中生效，因此，需要找到tmux相关版本的对应命令。  
 
@@ -117,7 +117,7 @@ tmux new -s  demo-one
 tmux kill-window -t 
 ```
 
-## 参考资料汇总
+# 参考资料汇总
 
 下面是学习tmux的过程中，参考的比较好的学习教程。  
 
@@ -129,7 +129,7 @@ tmux kill-window -t
 | tmux简洁教程及config关键配置                                 | [https://www.jianshu.com/p/fd3bbdba9dc9](https://www.jianshu.com/p/fd3bbdba9dc9) |
 | Tmux 配置：打造最适合自己的终端复用工具                      | [https://www.cnblogs.com/zuoruining/p/11074367.html](https://www.cnblogs.com/zuoruining/p/11074367.html) |
 
-## 参考
+# 参考
 
 1. [https://www.cnblogs.com/yangjianfengzj/p/16919610.html](https://www.cnblogs.com/yangjianfengzj/p/16919610.html)  
 2. [https://blog.csdn.net/ddydavie/article/details/79031564](https://blog.csdn.net/ddydavie/article/details/79031564)  

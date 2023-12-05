@@ -44,6 +44,9 @@ tmux输入快捷键有个前缀操作，默认是Ctrl + B，操作快捷键时�
 | 窗格切换 | Ctrl  + B, o |  |
 | 窗格上下左右拉伸 | Ctrl + B + 方向键 | 同时按 Ctrl + B + ←，表示窗格向左拉伸 |
 | 对当前面板进行缩放（全屏） | Ctrl + B ,z |  |
+| 窗格上下左右拉伸 | Ctrl + B + 方向键 | 同时按 Ctrl + B + ←，表示窗格向左拉伸 |
+| 重新命名窗口名称 | Ctrl + B， ， | 注意按完前缀键，接下来需要按**逗号**键 |
+| 查看所有的会话 | Ctrl + B，s | |
 
 ## 2 使用鼠标
 具体方式：  
@@ -90,10 +93,46 @@ set-option -g mouse on
 1 在终端运行命令：
 tmux source-file .tmux.conf 
 ```
+**关于配置文件的说明  **
+网上有很多tmux的配置文件，但是都没有标明适用的tmux的版本。  
+在本机电脑使用tmux发现tmux自定义配置的命令一直在迭代升级，有些命令是不兼容的。从网上直接粘贴过来的相关配置不一定能在自己的tmux中生效，因此，需要找到tmux相关版本的对应命令。  
+
+## 5 常用的tmux操作
+### 5.1 关于session的操作
+```
+在终端创建一个新的 session
+tmux new -s  demo-one
+如果需要tmux在后台运行：
+运行快捷键 Ctrl + B，d，然后就恢复原来的终端界面
+要想重新恢复 tmux 会话，可以运行快捷键 Ctrl + B，a
+
+```
+### 5.2 关于窗口的操作
+#### 5.2.1 如何重命名一个窗口
+```
+前缀键 + ，（先按前缀键 Ctrl和B，然后再按“，”键）
+```
+#### 5.2.2 如何关闭一个窗口
+```
+tmux kill-window -t 
+```
+
+## 参考资料汇总
+
+下面是学习tmux的过程中，参考的比较好的学习教程。  
+
+| 标题                                                         | 链接                                                         |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| tmux: Productive Mouse-Free Development 中文版（一本小书，比较容易看） | [https://www.kancloud.cn/kancloud/tmux/62462](https://www.kancloud.cn/kancloud/tmux/62462) |
+| Tmux使用手册（内容丰富，写的很清晰）                         | [https://louiszhai.github.io/2017/09/30/tmux/](https://louiszhai.github.io/2017/09/30/tmux/) |
+| tmux简洁教程                                                 | [https://notes.maxwi.com/2017/11/10/tmux/](https://notes.maxwi.com/2017/11/10/tmux/) |
+| tmux简洁教程及config关键配置                                 | [https://www.jianshu.com/p/fd3bbdba9dc9](https://www.jianshu.com/p/fd3bbdba9dc9) |
+| Tmux 配置：打造最适合自己的终端复用工具                      | [https://www.cnblogs.com/zuoruining/p/11074367.html](https://www.cnblogs.com/zuoruining/p/11074367.html) |
+
 ## 参考
 
 1. [https://www.cnblogs.com/yangjianfengzj/p/16919610.html](https://www.cnblogs.com/yangjianfengzj/p/16919610.html)  
 2. [https://blog.csdn.net/ddydavie/article/details/79031564](https://blog.csdn.net/ddydavie/article/details/79031564)  
 3. [https://www.ruanyifeng.com/blog/2019/10/tmux.html](https://www.ruanyifeng.com/blog/2019/10/tmux.html)  
 4. [https://apple.stackexchange.com/questions/217166/unknown-option-mode-mouse-with-iterm-tmux](https://apple.stackexchange.com/questions/217166/unknown-option-mode-mouse-with-iterm-tmux)
-4. [https://cenalulu.github.io/linux/tmux/](https://cenalulu.github.io/linux/tmux/)
+5. [https://cenalulu.github.io/linux/tmux/](https://cenalulu.github.io/linux/tmux/)

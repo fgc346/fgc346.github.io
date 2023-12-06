@@ -60,11 +60,13 @@ w/W之间移动的区别就是，word和WORD（字符串）之间的区别
 ### 3.1 书籍
 1. [Vim 实用技巧(第二版)](https://agou-images.oss-cn-qingdao.aliyuncs.com/pdfs/Vim%E5%AE%9E%E7%94%A8%E6%8A%80%E5%B7%A7%EF%BC%88%E7%AC%AC2%E7%89%88%EF%BC%89.pdf)
 2. [Learn Vimscript the Hard Way](https://learnvimscriptthehardway.stevelosh.com/)
+
 ## 4 一些疑难点
-### vim中单词和字符串的区别
-两者的区别  
+### 4.1 vim中单词和字符串的区别
+**两者的区别**    
 - word:一般由字母、数字和下划线组成
 - WORD:字符串一般以空格，tab键区分
+
 简而言之，word更短，WORD一般更长。  
 比如"The file's name is FILE_123 ."  
 划分为单词8个  

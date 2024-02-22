@@ -34,9 +34,9 @@ chrome 安装 vimium C 扩展程序，为了让chrome有类似于vim的效果。
 ## bash定义的快捷键
 来自于书籍 Advanced Bash-Scripting Guide。  
 ### Ctrl和字母组合
-|快捷键| 含义 | 英文原意 |
-| ---| --- | --- |
-| CTRL-A | 命令行跳到行首 | Moves cursor to beginning of line of text |
+|快捷键| 含义 |
+| ---| --- | 
+| CTRL-A | 命令行跳到行首, Moves cursor to beginning of line of text |
 
 ### Alt 和字母组合
 | Alt + B | 左移一个单词 |  |

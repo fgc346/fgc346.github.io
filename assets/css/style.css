@@ -1274,7 +1274,8 @@ table tr:hover {
 
 /* 首列不换行 */
 table td:nth-child(1) {
-  white-space: nowrap; 
+    width:20%;
+   white-space: nowrap; 
 }
 /* 指定列宽度 */
 table th:nth-of-type(2) {

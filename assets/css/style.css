@@ -1218,7 +1218,7 @@ figure {
 }
 
 /* table */
-/* table {
+table {
     margin: auto auto 15px;
     width: 100%;
     background: transparent;
@@ -1239,10 +1239,10 @@ table td {
 
 table tr:nth-child(2n) {
     background: #f7f8f8;
-} */
+}
 
 /* new table css style add 20231201*/
-table {
+/* table {
     border-left: 1px solid #000000;
     border-top: 1px solid #000000;
     width: 100%;
@@ -1258,7 +1258,7 @@ table th,
 td {
     border-right: 1px solid #000000;
     border-bottom: 1px solid #000000;
-}
+} */
 
 /* donate */
 #donate {

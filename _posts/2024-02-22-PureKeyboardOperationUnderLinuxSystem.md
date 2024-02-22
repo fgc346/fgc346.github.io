@@ -34,18 +34,18 @@ chrome 安装 vimium C 扩展程序，为了让chrome有类似于vim的效果。
 ## bash定义的快捷键
 来自于书籍 Advanced Bash-Scripting Guide。  
 ### Ctrl和字母组合
-|  快捷键  | 含义 | 英文原意 |
+|          快捷键            | 含义 | 英文原意 |
 | ---| --- | --- |
 | CTRL-A | 命令行跳到行首 | Moves cursor to beginning of line of text |
 | CTRL-B | 左移光标 | Backspace(nondestructive) |
 | CTRL-C | 中断正在当前正在执行的程序 | Break.Terminate a foreground job |
 | CTRL-D | 删除当前光标所在字符 | log out from a shell(similar to exit)|
-| CTRL-E | 命令行跳转到行尾 |  |
-| CTRL-F | 右移光标 |  |
+| CTRL-E | 命令行跳转到行尾 |  aaa|
+| CTRL-F | 右移光标 | aaa |
 | CTRL-G | 发出响铃的声音 | BEL |
 | CTRL-H | 删除光标的前一个字符 | Rubout(destructive backspace).Erases characters the cursor backs over while backspacing. |
 | CTRL-I | 相当于tab键功能 | Horizontal tab |
-| CTRL-J |  |  |
+| CTRL-J | aaa |aaa  |
 | CTRL-K | 删除光标之后所有字符 | vertical tab，erases from the character under the cursor to end of line |
 | CTRL-L | 清屏 | Formfeed(clear the terminal screen) |
 |CTRL-M| 相当于回车键，在windows的文本在linux中显示时，可能会有^M这样 | Carriage return                                              |
@@ -57,7 +57,7 @@ chrome 安装 vimium C 扩展程序，为了让chrome有类似于vim的效果。
 |CTRL-S| 暂停输出，软件流控制，终端会停止向屏幕输出内容，这可以暂时组织屏幕上的任何新文本显示 | Suspend |
 | CTRL-T | 交换光标处当前字符和前一个字符的位置 | Reverses the position of the character the cursor is on with the previous character |
 | CTRL-U | 清空当前键入的命令 | earse a line of input, from the cursor backward to beginning of line. |
-| CTRL-V | 粘贴 |  |
+| CTRL-V | 粘贴 | aaa |
 | CTRL-W | 从当前光标，往左删除至第一个空白符的位置 | erases from the character under the cursor backwards to the first instance of whitespace |
 | CTRL-X | 剪切 | cuts highlighted text and copies to clipboard |
 | CTRL-Y | 粘贴或者恢复上次删除的命令 | pastes back text previously erased |

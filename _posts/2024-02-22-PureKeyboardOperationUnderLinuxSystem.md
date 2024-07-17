@@ -19,17 +19,17 @@ chrome 安装 vimium C 扩展程序，为了让chrome有类似于vim的效果。
 ```
 ## 打开侧边栏的方式
 首先可以使用Super + 数字 打开桌面的侧边栏。  
-![image.png](https://raw.githubusercontent.com/fgc346/image/main/img/1702285987019-69d2a118-0f16-450b-b77e-053cf8152151.png)   
+
+![image-20240717151621718](https://raw.githubusercontent.com/fgc346/image/main/img/image-20240717151621718.png)   
 因此，下面就是键盘打开这些应用的方式  
 
 | 应用 | 快捷键 |
 | --- | --- |
-| 文件管理器 | Super + 1 |
-| Chrome浏览器 | Super + 2 |
-| firefox浏览器 | Super + 3 |
-| VSCode | Super + 4 |
-| 资源监视器 | Super + 5 |
-|  |  |
+| firefox浏览器 | Super + 1 |
+| 文件管理器 | Super + 2 |
+| Chrome浏览器 | Super + 3 |
+| 终端 | Super + 4 |
+| VSCode | Super + 5 |
 
 ## bash定义的快捷键
 来自于书籍 Advanced Bash-Scripting Guide。  
@@ -67,18 +67,20 @@ chrome 安装 vimium C 扩展程序，为了让chrome有类似于vim的效果。
 ### Alt 和字母组合
 
 |         快捷键         | 含义 |
-| --- | --- | 
+| --- | --- |
 | Alt + B | 左移一个单词 |
 | Alt + F | 右移一个单词 |
 | Alt + . | 粘贴上一条命令的最后一个参数 |
+| Alt + F7 | 使用方向键移动当前窗口 |
 
 ## chrome快捷键操作
 
 | 快捷键 | 含义 |
 | --- | --- |
-| Alt + `  快捷键 | 一个程序的多个窗口之间的切换,比如使用chrome打开了两个窗口，就可以使用Alt + `切换两个不同的窗口 |
+| Alt + `  快捷键 | 一个程序的多个窗口之间的切换,比如使用chrome打开了两个窗口，就可以使用Alt + `切换两个不同的窗口 ||
 | Ctrl + J | 打开下载页面 |
-|  |  |
+| Ctrl + D | 添加当前页面到书签栏 |
+| Ctrl + T | 打开新的标签页，并跳转到标签页 |
 
 
 ## 多屏幕下的窗口移动
